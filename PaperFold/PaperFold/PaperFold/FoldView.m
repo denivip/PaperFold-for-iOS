@@ -83,6 +83,7 @@
     [self setAutoresizesSubviews:YES];
     [_contentView setAutoresizesSubviews:YES];
     [_contentView setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
+    [self.contentView setHidden:YES];
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -212,7 +213,7 @@
 - (void)foldDidClosed
 {
     //NSLog(@"closed");
-    [self.contentView setHidden:NO];
+    [self.contentView setHidden:YES];
     [self showFolds:YES];
 }
 
