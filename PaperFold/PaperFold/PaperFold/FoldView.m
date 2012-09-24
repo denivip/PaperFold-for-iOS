@@ -83,7 +83,6 @@
     [self setAutoresizesSubviews:YES];
     [_contentView setAutoresizesSubviews:YES];
     [_contentView setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
-    [self.contentView setHidden:YES];
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -186,6 +185,7 @@
     [contentView setFrame:CGRectMake(0,0,contentView.frame.size.width,contentView.frame.size.height)];
     [self.contentView addSubview:contentView];
     [self drawScreenshotOnFolds];
+    [self.contentView setHidden:YES];
 }
 
 
